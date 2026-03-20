@@ -1,0 +1,225 @@
+{
+  "generated_at": "2026-03-20T18:49:38.473398Z",
+  "items": [
+    {
+      "ticker": "T",
+      "last_price": 28.524999618530273,
+      "last_volume": 46384039,
+      "avg_money_flow": 51248.7218119813,
+      "last_money_flow": 1312597.831210785,
+      "volume_relative": 1.166735768402541,
+      "volume_spike": 1.1510200086113516,
+      "momentum": 1.0183044835751032,
+      "score": 472221.870870585
+    },
+    {
+      "ticker": "NFLX",
+      "last_price": 91.53800201416016,
+      "last_volume": 27387745,
+      "avg_money_flow": 1474800.746000248,
+      "last_money_flow": -60303.14965098568,
+      "volume_relative": 0.5476326850517782,
+      "volume_spike": 0.7952673024479684,
+      "momentum": 0.9861150530669734,
+      "score": 347594.38416872045
+    },
+    {
+      "ticker": "XOM",
+      "last_price": 161.1300048828125,
+      "last_volume": 20652952,
+      "avg_money_flow": 76565.77617106216,
+      "last_money_flow": 387830.6223498045,
+      "volume_relative": 0.9595742440195303,
+      "volume_spike": 0.9387169873835198,
+      "momentum": 1.0529033108224135,
+      "score": 154882.55189921288
+    },
+    {
+      "ticker": "CVX",
+      "last_price": 203.3699951171875,
+      "last_volume": 11769143,
+      "avg_money_flow": 80657.71202221664,
+      "last_money_flow": 112759.92610667809,
+      "volume_relative": 0.935064233289617,
+      "volume_spike": 0.7940398523550457,
+      "momentum": 1.0622145019126137,
+      "score": 59630.767729954525
+    },
+    {
+      "ticker": "V",
+      "last_price": 301.3399963378906,
+      "last_volume": 4671512,
+      "avg_money_flow": -27385.4784141644,
+      "last_money_flow": 25406.518258363143,
+      "volume_relative": 0.6423974777047043,
+      "volume_spike": 0.7262865071720822,
+      "momentum": 0.9667349984830743,
+      "score": 2046.2137629835784
+    },
+    {
+      "ticker": "DIS",
+      "last_price": 98.98500061035156,
+      "last_volume": 9414153,
+      "avg_money_flow": -35738.17291332787,
+      "last_money_flow": -20403.31130653187,
+      "volume_relative": 0.8694283244505431,
+      "volume_spike": 0.873737733310008,
+      "momentum": 0.9700251032543465,
+      "score": -16075.343708199132
+    },
+    {
+      "ticker": "JPM",
+      "last_price": 287.2200012207031,
+      "last_volume": 6893277,
+      "avg_money_flow": -55499.313161997896,
+      "last_money_flow": -17953.11222726179,
+      "volume_relative": 0.6816456220045707,
+      "volume_spike": 0.7066644617735159,
+      "momentum": 0.9813749878339897,
+      "score": -20158.11118602975
+    },
+    {
+      "ticker": "BAC",
+      "last_price": 47.040000915527344,
+      "last_volume": 28126934,
+      "avg_money_flow": -360056.15149599506,
+      "last_money_flow": 17951.09575052775,
+      "volume_relative": 0.6243109150212166,
+      "volume_spike": 0.6429156999193724,
+      "momentum": 0.9646053036827807,
+      "score": -83730.86781679143
+    },
+    {
+      "ticker": "AAPL",
+      "last_price": 247.63999938964844,
+      "last_volume": 32469450,
+      "avg_money_flow": -152906.64590022987,
+      "last_money_flow": -172155.81080303394,
+      "volume_relative": 0.8475884587051973,
+      "volume_spike": 0.9543142598038935,
+      "momentum": 0.9525696154572452,
+      "score": -98480.82971375002
+    },
+    {
+      "ticker": "META",
+      "last_price": 591.4849853515625,
+      "last_volume": 10873311,
+      "avg_money_flow": -52990.133870189304,
+      "last_money_flow": -272684.54844930756,
+      "volume_relative": 0.896763380248751,
+      "volume_spike": 0.8754374878340576,
+      "momentum": 0.9255622685077163,
+      "score": -108686.7670384479
+    },
+    {
+      "ticker": "BABA",
+      "last_price": 122.68599700927734,
+      "last_volume": 10307515,
+      "avg_money_flow": -204080.083280557,
+      "last_money_flow": -182713.24648630904,
+      "volume_relative": 0.9200241352572539,
+      "volume_spike": 0.8128434840309707,
+      "momentum": 0.8911677641833188,
+      "score": -114969.30804342809
+    },
+    {
+      "ticker": "GOOG",
+      "last_price": 297.6400146484375,
+      "last_volume": 15567233,
+      "avg_money_flow": 17522.154945078582,
+      "last_money_flow": -411928.34669646417,
+      "volume_relative": 0.8365507899214373,
+      "volume_spike": 1.0114468903827394,
+      "momentum": 0.973607091344038,
+      "score": -139794.00804713165
+    },
+    {
+      "ticker": "PFE",
+      "last_price": 26.924999237060547,
+      "last_volume": 24938119,
+      "avg_money_flow": 20560.282609858914,
+      "last_money_flow": -441262.42259581236,
+      "volume_relative": 0.6390354950473581,
+      "volume_spike": 0.6112724259684985,
+      "momentum": 0.9961430406933361,
+      "score": -149301.49009557735
+    },
+    {
+      "ticker": "AMZN",
+      "last_price": 205.60000610351562,
+      "last_volume": 33114485,
+      "avg_money_flow": 68171.63950520233,
+      "last_money_flow": -501252.1140802101,
+      "volume_relative": 0.7261488840640078,
+      "volume_spike": 0.8298244835659306,
+      "momentum": 0.9750268215191171,
+      "score": -158394.99915308564
+    },
+    {
+      "ticker": "MSFT",
+      "last_price": 381.7200012207031,
+      "last_volume": 24977316,
+      "avg_money_flow": -50415.47018901628,
+      "last_money_flow": -468701.1131829399,
+      "volume_relative": 0.7731702534590765,
+      "volume_spike": 0.9202628641592917,
+      "momentum": 0.9572675346000293,
+      "score": -176648.90741956193
+    },
+    {
+      "ticker": "AMD",
+      "last_price": 198.64999389648438,
+      "last_volume": 21058695,
+      "avg_money_flow": 228831.51913269333,
+      "last_money_flow": -679148.3241725102,
+      "volume_relative": 0.6182433923408494,
+      "volume_spike": 0.7457132244412421,
+      "momentum": 0.9915519390562703,
+      "score": -180493.72992851882
+    },
+    {
+      "ticker": "ORCL",
+      "last_price": 149.2050018310547,
+      "last_volume": 16639136,
+      "avg_money_flow": 115779.92769372454,
+      "last_money_flow": -675644.1716578407,
+      "volume_relative": 0.5880962511041745,
+      "volume_spike": 0.5016976654132137,
+      "momentum": 0.9828841161887896,
+      "score": -207530.216399314
+    },
+    {
+      "ticker": "TSLA",
+      "last_price": 368.0899963378906,
+      "last_volume": 54344233,
+      "avg_money_flow": -294203.2887315196,
+      "last_money_flow": -1744787.3832801676,
+      "volume_relative": 0.9357463071289359,
+      "volume_spike": 0.928426041198032,
+      "momentum": 0.923732870508044,
+      "score": -684226.0343317993
+    },
+    {
+      "ticker": "INTC",
+      "last_price": 43.93000030517578,
+      "last_volume": 70348285,
+      "avg_money_flow": 23041.18011324713,
+      "last_money_flow": -3427536.6003464414,
+      "volume_relative": 0.886514924007442,
+      "volume_spike": 0.858223473018373,
+      "momentum": 0.9680796042166996,
+      "score": -1193877.1565742225
+    },
+    {
+      "ticker": "NVDA",
+      "last_price": 173.47500610351562,
+      "last_volume": 135390403,
+      "avg_money_flow": -1129483.9043418858,
+      "last_money_flow": -3855617.449415958,
+      "volume_relative": 0.7121099835497086,
+      "volume_spike": 0.8055847207845629,
+      "momentum": 0.947155072487198,
+      "score": -1631836.761011344
+    }
+  ]
+}
