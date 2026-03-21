@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Heatmap – Money Flow</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    .search-box { margin-top: 20px; }
+    .result { padding: 8px; border-bottom: 1px solid #ccc; cursor: pointer; }
+  </style>
+</head>
+<body>
+
+<h1>Heatmap – Money Flow</h1>
+<p>Versione pulita, ricostruita da zero.</p>
+
+<div class="search-box">
+  <input id="searchInput" type="text" placeholder="Cerca un titolo (AAPL, SPY, GLD, ETC...)" style="width: 100%; padding: 8px;">
+  <div id="searchResults"></div>
+</div>
+
+<script>
+  function vai(ticker) {
+    window.location.href = '/web/titolo.html?ticker=' + ticker;
+  }
+
+  function mostraRisultati(query) {
+    const box = document.getElementById('searchResults');
+    if (!query || query.length < 2) {
+      box.innerHTML = '';
+      return;
+    }
+
+    box.innerHTML = `
+      <div class="result" onclick="vai('CVX')">CVX – Chevron Corp.</div>
+      <div class="result" onclick="vai('SPY')">SPY – S&P 500 ETF</div>
+    `;
+  }
+
+  document.getElementById('searchInput').addEventListener('input', e => {
+    mostraRisultati(e.target.value);
+  });
+</script>
+
+</body>
+</html>
