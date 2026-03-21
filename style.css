@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #0d1117;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    background: #161b22;
+    padding: 15px;
+    gap: 20px;
+    border-bottom: 1px solid #30363d;
+}
+
+.nav-item {
+    cursor: pointer;
+    color: #58a6ff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-item:hover {
+    color: white;
+}
+
+/* PAGINE */
+.page {
+    display: none;
+    padding: 20px;
+}
+
+.page-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #58a6ff;
+}
+
+/* BOX */
+.box {
+    background: #161b22;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border: 1px solid #30363d;
+}
+
+.box h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #58a6ff;
+}
+
+/* CANVAS */
+canvas {
+    width: 100% !important;
+    height: 350px !important;
+}
+
+/* TRADINGVIEW */
+.tradingview-widget-container {
+    border-radius: 10px;
+    overflow: hidden;
+}
