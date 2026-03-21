@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Money Flow Dashboard</title>
+
+    <style>
+        body {
+            background: #0a0d12;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        #searchInput {
+            width: 100%;
+            padding: 10px;
+            margin: 15px 0;
+            border-radius: 6px;
+            border: none;
+            font-size: 16px;
+        }
+
+        #searchResults .result {
+            padding: 8px;
+            background: #1a1f27;
+            margin-top: 5px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #heatmap-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .tile {
+            padding: 15px;
+            border-radius: 10px;
+            color: white;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        #detail-view {
+            display: none;
+        }
+
+        #chart-canvas {
+            width: 100%;
+            height: 250px;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 15px;
+            border-collapse: collapse;
+        }
+
+        table td {
+            padding: 8px;
+            border-bottom: 1px solid #333;
+        }
+
+        #news-section {
+            margin-top: 40px;
+            padding: 15px;
+            background: #11151c;
+            border-radius: 10px;
+        }
+
+        .news-item {
+            padding: 8px 0;
+            border-bottom: 1px solid #222;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Top 20 – Money Flow & Demand/Offer</h1>
+    <p style="text-align:center;">20 titoli basati sul flusso dei soldi domanda/offerta</p>
+
+    <!-- RICERCA -->
+    <input id="searchInput" type="text" placeholder="Cerca un titolo..." />
+    <div id="searchResults"></div>
+
+    <!-- HEATMAP -->
+    <div id="heatmap-view">
+        <div id="heatmap-grid"></div>
+
+        <!-- NEWS SOTTO LA HEATMAP -->
+        <div id="news-section">
+            <h2>News del giorno</h2>
+            <div id="news-list"></div>
+        </div>
+    </div>
+
+    <!-- DETTAGLIO -->
+    <div id="detail-view">
+        <button id="back-btn">⬅ Torna indietro</button>
+        <h2 id="detail-title"></h2>
+        <div id="detail-stats"></div>
+
+        <canvas id="chart-canvas"></canvas>
+
+        <h3>Migliori prezzi di entrata</h3>
+        <table>
+            <tbody id="entries-table"></tbody>
+        </table>
+    </div>
+
+    <!-- COLLEGAMENTO AL TUO FILE app.js -->
+    <script src="app.js"></script>
+
+</body>
+</html>
