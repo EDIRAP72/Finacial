@@ -64,3 +64,29 @@ canvas {
     border-radius: 10px;
     overflow: hidden;
 }
+.mini-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.mini-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0d1117;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #30363d;
+    cursor: pointer;
+}
+
+.mini-item:hover {
+    background: #1a1f27;
+}
+
+.mini-chart {
+    width: 120px;
+    height: 50px;
+    border: none;
+}
