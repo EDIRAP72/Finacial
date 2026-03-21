@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+    background: #010409;
+    color: #e6edf3;
+}
+
+/* TOP BAR */
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #0d1117;
+    border-bottom: 1px solid #30363d;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* MAIN */
+
+.main {
+    padding: 14px;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+.page-title {
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+
+/* BOX */
+
+.box {
+    background: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 10px;
+    padding: 14px;
+    margin-bottom: 16px;
+}
+
+.box h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* SEARCH FORM */
+
+.search-form {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.search-form input {
+    flex: 1;
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid #30363d;
+    background: #010409;
+    color: #e6edf3;
+    font-size: 14px;
+}
+
+.search-form button {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #30363d;
+    background: #238636;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background: #2ea043;
+}
+
+.hint {
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+/* NOTIZIE */
+
+.news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.news-item {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #30363d;
+    background: #0d1117;
+    font-size: 13px;
+}
+
+.news-item-title {
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.news-item-source {
+    font-size: 11px;
+    opacity: 0.7;
+}
+
+/* DATI DI MERCATO */
+
+.market-data {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px 12px;
+    font-size: 14px;
+}
+
+.market-data .label {
+    opacity: 0.7;
+}
+
+/* ENTRY LEVELS */
+
+.entry-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 14px;
+}
+
+.entry-list li {
+    padding: 6px 8px;
+    border-radius: 6px;
+    border: 1px solid #30363d;
+    background: #0d1117;
+}
+
+/* GRAFICO */
+
+.main-chart-wrapper {
+    width: 100%;
+    min-height: 280px;
+}
+
+.main-chart-iframe {
+    width: 100%;
+    height: 280px;
+    border: none;
+}
+
+/* BOTTONE BACK */
+
+.back-btn {
+    background: #21262d;
+    color: #e6edf3;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    padding: 10px 12px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    background: #30363d;
+}
+
+/* RESPONSIVE */
+
+@media (min-width: 768px) {
+    .main {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+}
