@@ -188,28 +188,52 @@
     // =========================
     // DATI DI BASE: 20 TITOLI
     // =========================
-    const instruments = [
-      { ticker: "AAPL", name: "Apple Inc.", type: "Azione", basePrice: 190, moneyFlow: 0.65, liquidity: 0.95 },
-      { ticker: "MSFT", name: "Microsoft Corp.", type: "Azione", basePrice: 380, moneyFlow: 0.58, liquidity: 0.93 },
-      { ticker: "AMZN", name: "Amazon.com Inc.", type: "Azione", basePrice: 210, moneyFlow: 0.52, liquidity: 0.9 },
-      { ticker: "GOOG", name: "Alphabet Inc.", type: "Azione", basePrice: 280, moneyFlow: 0.49, liquidity: 0.9 },
-      { ticker: "META", name: "Meta Platforms", type: "Azione", basePrice: 290, moneyFlow: 0.55, liquidity: 0.88 },
-      { ticker: "TSLA", name: "Tesla Inc.", type: "Azione", basePrice: 360, moneyFlow: 0.4, liquidity: 0.85 },
-      { ticker: "NVDA", name: "NVIDIA Corp.", type: "Azione", basePrice: 500, moneyFlow: 0.7, liquidity: 0.92 },
-      { ticker: "INTC", name: "Intel Corp.", type: "Azione", basePrice: 44, moneyFlow: 0.35, liquidity: 0.8 },
-      { ticker: "XOM", name: "Exxon Mobil", type: "Commodity/Oil", basePrice: 160, moneyFlow: 0.6, liquidity: 0.87 },
-      { ticker: "CVX", name: "Chevron Corp.", type: "Commodity/Oil", basePrice: 200, moneyFlow: 0.57, liquidity: 0.84 },
-      { ticker: "GLD", name: "Gold ETF", type: "ETF Commodity", basePrice: 190, moneyFlow: 0.5, liquidity: 0.9 },
-      { ticker: "TLT", name: "20+ Year Treasury", type: "ETF Obbligazioni", basePrice: 95, moneyFlow: 0.42, liquidity: 0.86 },
-      { ticker: "HYG", name: "High Yield Corp Bond", type: "ETF Obbligazioni", basePrice: 78, moneyFlow: 0.38, liquidity: 0.82 },
-      { ticker: "SPY", name: "S&P 500 ETF", type: "ETF Azionario", basePrice: 520, moneyFlow: 0.62, liquidity: 0.98 },
-      { ticker: "QQQ", name: "Nasdaq 100 ETF", type: "ETF Azionario", basePrice: 440, moneyFlow: 0.59, liquidity: 0.96 },
-      { ticker: "LQD", name: "Investment Grade Corp Bond", type: "ETF Obbligazioni", basePrice: 110, moneyFlow: 0.41, liquidity: 0.88 },
-      { ticker: "USO", name: "US Oil Fund", type: "ETF Commodity", basePrice: 75, moneyFlow: 0.48, liquidity: 0.83 },
-      { ticker: "SLV", name: "Silver Trust", type: "ETF Commodity", basePrice: 25, moneyFlow: 0.44, liquidity: 0.8 },
-      { ticker: "BND", name: "Total Bond Market", type: "ETF Obbligazioni", basePrice: 80, moneyFlow: 0.39, liquidity: 0.9 },
-      { ticker: "EEM", name: "Emerging Markets ETF", type: "ETF Azionario", basePrice: 42, moneyFlow: 0.36, liquidity: 0.78 }
-    ];
+    <script>
+async function caricaUniverse() {
+  const response = await fetch('web/universe.csv');
+  const text = await response.text();
+
+  const righe = text.trim().split('\n');
+  const tickers = righe.slice(1); // salta la riga "ticker"
+
+  return tickers.map(t => t.trim()).filter(t => t.length > 0);
+}
+
+async function init() {
+  const universe = await caricaUniverse();
+
+  // CREA HEATMAP
+  const heatmap = document.getElementById('heatmap');
+  heatmap.innerHTML = '';
+  universe.forEach(ticker => {
+    const div = document.createElement('div');
+    div.className = 'tile';
+    div.innerText = ticker;
+    div.onclick = () => window.location.href = `/Finacial/web/titolo.html?ticker=${ticker}`;
+    heatmap.appendChild(div);
+  });
+
+  // RICERCA
+  const input = document.getElementById('searchInput');
+  const results = document.getElementById('searchResults');
+
+  input.addEventListener('input', () => {
+    const q = input.value.toUpperCase();
+    if (!q) {
+      results.innerHTML = '';
+      return;
+    }
+
+    const filtrati = universe.filter(t => t.includes(q));
+    results.innerHTML = filtrati
+      .map(t => `<div class="result" onclick="window.location.href='/Finacial/web/titolo.html?ticker=${t}'">${t}</div>`)
+      .join('');
+  });
+}
+
+init();
+</script>
+
 
     // =========================
     // HEATMAP
