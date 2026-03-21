@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Analisi titolo</title>
+</head>
+<body>
+
+<h1 id="titolo"></h1>
+<p>Pagina ricostruita da zero.</p>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const ticker = params.get('ticker');
+  document.getElementById('titolo').innerText = "Analisi: " + ticker;
+</script>
+
+</body>
+</html>
