@@ -1,0 +1,62 @@
+/* Tema scuro generale */
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenitori delle pagine */
+#home-view, #detail-view, #investors-view {
+    padding: 20px;
+}
+
+/* Titoli */
+h1, h2, h3 {
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+/* Box generici */
+.box {
+    background: #111;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Pulsanti */
+button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #444;
+}
+
+/* Link */
+a {
+    color: #4da3ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Barra di ricerca */
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    background: #111;
+    color: #fff;
+    margin-bottom: 10px;
+}
