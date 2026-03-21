@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Quantum Market Lab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top-bar">
+    <div class="logo">Quantum Market Lab</div>
+</header>
+
+<main class="main">
+
+    <!-- PAGINA 1: RICERCA + NOTIZIE -->
+    <section id="home-page" class="page active">
+        <h1 class="page-title">Scanner Mercati</h1>
+
+        <div class="box">
+            <h2>Cerca uno strumento</h2>
+            <form id="search-form" class="search-form">
+                <input
+                    type="text"
+                    id="search-input"
+                    placeholder="Es. AAPL, TSLA, EURUSD, GOLD..."
+                    autocomplete="off"
+                >
+                <button type="submit">Analizza</button>
+            </form>
+            <p class="hint">Digita il simbolo e premi “Analizza”.</p>
+        </div>
+
+        <div class="box">
+            <h2>Notizie di mercato</h2>
+            <div id="news-container" class="news-list">
+                <!-- Riempito da JS (placeholder) -->
+            </div>
+        </div>
+    </section>
+
+    <!-- PAGINA 2: ANALISI STRUMENTO -->
+    <section id="analysis-page" class="page">
+        <h1 class="page-title" id="asset-name">Strumento</h1>
+
+        <div class="box">
+            <h2>Dati di mercato (simulati)</h2>
+            <div class="market-data">
+                <div><span class="label">Prezzo attuale:</span> <span id="price-now">-</span></div>
+                <div><span class="label">Bid:</span> <span id="bid-price">-</span></div>
+                <div><span class="label">Ask:</span> <span id="ask-price">-</span></div>
+                <div><span class="label">Volume stimato:</span> <span id="volume">-</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <h2>Proiezione 1 mese & ingressi</h2>
+            <p class="hint">
+                I valori sono generati da una logica matematica simulata, pensata come base per un modello più complesso.
+            </p>
+            <ul id="entry-levels" class="entry-list">
+                <!-- 5 prezzi di entrata -->
+            </ul>
+        </div>
+
+        <div class="box">
+            <h2>Grafico</h2>
+            <div id="chart-container" class="main-chart-wrapper"></div>
+        </div>
+
+        <div class="box">
+            <button type="button" class="back-btn" onclick="showPage('home-page')">
+                ← Torna alla ricerca
+            </button>
+        </div>
+    </section>
+
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
