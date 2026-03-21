@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Analisi titolo</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background: #111; color: #eee; }
+    a { color: #64b5f6; text-decoration: none; }
+    .small { font-size: 12px; opacity: 0.8; }
+    .box { margin-top: 20px; padding: 15px; border-radius: 6px; background: #1e1e1e; }
+    .label { font-size: 12px; opacity: 0.7; text-transform: uppercase; margin-bottom: 4px; }
+    .value { font-size: 16px; }
+  </style>
+</head>
+<body>
+
+<a href="/Finacial/" class="small">← Torna alla heatmap</a>
+
+<h1 id="titolo"></h1>
+<p class="small" id="sottotitolo"></p>
+
+<div class="box">
+  <div class="label">Stato</div>
+  <div class="value" id="stato">In caricamento…</div>
+</div>
+
+<div class="box">
+  <div class="label">Note</div>
+  <div class="value" id="note">Pagina statica di analisi titolo. In una versione successiva qui si integrano dati reali, opzioni, news, ecc.</div>
+</div>
+
+<script>
+  const universe = {
+    'AAPL': 'Apple Inc.',
+    'MSFT': 'Microsoft Corp.',
+    'NVDA': 'NVIDIA Corp.',
+    'AMZN': 'Amazon.com Inc.',
+    'GOOGL': 'Alphabet Class A',
+    'META': 'Meta Platforms',
+    'TSLA': 'Tesla Inc.',
+    'SPY': 'S&P 500 ETF',
+    'QQQ': 'Nasdaq 100 ETF',
+    'XLE': 'Energy Select ETF',
+    'CVX': 'Chevron Corp.',
+    'XOM': 'Exxon Mobil',
+    'GLD': 'Gold Trust',
+    'SLV': 'Silver Trust',
+    'TLT': '20+Y Treasury',
+    'HYG': 'High Yield Corp',
+    'LQD': 'Inv Grade Corp',
+    'IWM': 'Russell 2000 ETF',
+    'EEM': 'Emerging Markets',
+    'USO': 'US Oil Fund'
+  };
+
+  const params = new URLSearchParams(window.location.search);
+  const ticker = (params.get('ticker') || '').toUpperCase();
+  const name = universe[ticker] || 'Titolo non riconosciuto';
+
+  document.getElementById('titolo').innerText = ticker ? `Analisi: ${ticker}` : 'Nessun ticker specificato';
+  document.getElementById('sottotitolo').innerText = name;
+
+  if (!ticker) {
+    document.getElementById('stato').innerText = 'Nessun ticker passato in query string.';
+  } else if (!universe[ticker]) {
+    document.getElementById('stato').innerText = 'Ticker non presente nell’universo definito.';
+  } else {
+    document.getElementById('stato').innerText = 'Struttura pronta per integrare dati reali, opzioni, news e grafici.';
+  }
+</script>
+
+</body>
+</html>
