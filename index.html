@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Quantum Journal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- HEADER STILE GIORNALE -->
+    <header id="header">
+        <div class="newspaper-title">FINANCIAL QUANTUM JOURNAL</div>
+        <nav class="menu">
+            <span>Home</span>
+            <span>Mercati</span>
+            <span>Portfolio</span>
+            <span>Info</span>
+        </nav>
+    </header>
+
+    <!-- TICKER SCORREVOLE -->
+    <div id="ticker-container">
+        <div id="ticker">
+            <!-- Qui JS inserirà i titoli scorrevoli -->
+        </div>
+    </div>
+
+    <!-- SEZIONE NOTIZIE PRINCIPALI -->
+    <section id="news-section">
+        <h2>Ultime Notizie Finanziarie</h2>
+        <div id="news-grid">
+            <!-- JS popolerà le notizie -->
+        </div>
+    </section>
+
+    <!-- BARRA DI RICERCA -->
+    <section id="search-section">
+        <input type="text" id="search-input" placeholder="Cerca un titolo (AAPL, TSLA, ENI...)">
+        <button id="search-btn">Cerca</button>
+    </section>
+
+    <!-- PAGINA DETTAGLIO (inizialmente nascosta) -->
+    <section id="detail-page" class="hidden">
+        <!-- Qui andrà tutto lo Step 2 -->
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
