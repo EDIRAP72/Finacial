@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Quantum Journal</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- TradingView Lightweight Charts -->
+    <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header id="header">
+        <div class="newspaper-title">FINANCIAL QUANTUM JOURNAL</div>
+        <nav class="menu">
+            <span>Home</span>
+            <span>Mercati</span>
+            <span>Portfolio</span>
+            <span>Info</span>
+            <span id="toggle-dark">Dark Mode</span>
+        </nav>
+    </header>
+
+    <!-- TICKER -->
+    <div id="ticker-container">
+        <div id="ticker"></div>
+    </div>
+
+    <!-- HEATMAP -->
+    <section id="heatmap-section">
+        <h2>Heatmap Mercati</h2>
+        <div id="heatmap"></div>
+    </section>
+
+    <!-- NEWS -->
+    <section id="news-section">
+        <h2>Ultime Notizie Finanziarie</h2>
+        <div id="news-grid"></div>
+    </section>
+
+    <!-- SEARCH -->
+    <section id="search-section">
+        <input type="text" id="search-input" placeholder="Cerca un titolo (AAPL, TSLA, ENI...)">
+        <button id="search-btn">Cerca</button>
+    </section>
+
+    <!-- WATCHLIST -->
+    <section id="watchlist-section">
+        <h2>Watchlist</h2>
+        <div id="watchlist"></div>
+    </section>
+
+    <!-- PAGINA DETTAGLIO -->
+    <section id="detail-page" class="hidden"></section>
+
+    <!-- MULTI-ASSET -->
+    <section id="multi-asset-section">
+        <h2>Analisi Multi‑Asset</h2>
+        <div id="multi-asset-box">[Analisi in corso...]</div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
