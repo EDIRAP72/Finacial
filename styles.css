@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', serif;
+    background: #f4f4f4;
+    color: #000;
+}
+
+/* HEADER */
+#header {
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 3px solid black;
+    background: white;
+}
+
+.newspaper-title {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.menu span {
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* TICKER */
+#ticker-container {
+    background: black;
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px 0;
+}
+
+#ticker {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll 25s linear infinite;
+}
+
+@keyframes scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+}
+
+/* NEWS */
+#news-section {
+    padding: 20px;
+}
+
+#news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.news-card {
+    background: white;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+/* SEARCH */
+#search-section {
+    text-align: center;
+    padding: 30px;
+}
+
+#search-input {
+    width: 300px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+#search-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* HEATMAP */
+#heatmap {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 20px;
+}
+
+.heatbox {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+/* WATCHLIST */
+#watchlist {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.watchbox {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    min-width: 120px;
+    text-align: center;
+}
+
+/* DETTAGLIO */
+.hidden {
+    display: none;
+}
+
+.section-block {
+    background: white;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+}
+
+/* DARK MODE */
+body.dark {
+    background: #0d0d0d;
+    color: #e0e0e0;
+}
+
+.dark .section-block,
+.dark .news-card,
+.dark .watchbox {
+    background: #1a1a1a;
+    border-color: #333;
+}
+
+.dark #header {
+    background: #111;
+    border-bottom: 3px solid #444;
+}
+
+.dark #ticker-container {
+    background: #222;
+}
